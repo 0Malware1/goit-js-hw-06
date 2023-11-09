@@ -1,9 +1,10 @@
 
 const validationInput = document.getElementById("validation-input");
+const requiredLength = parseInt(validationInput.getAttribute("data-length"));
 
 validationInput.addEventListener("blur", () => {
   
-  const requiredLength = parseInt(validationInput.getAttribute("data-length"));
+  
 
   const inputValue = validationInput.value;
 
